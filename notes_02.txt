@@ -1,0 +1,60 @@
+episode-02
+npm install -D parcel
+-D indicates developement dependencies
+
+
+we use parcle to bundel file 
+^2.12.0  
+In a package.json file, the tilde (~) and caret (^) symbols are used to specify version ranges for your project’s dependencies. They help you control which versions of packages can your projects use when you run npm install or yarn install.
+
+The tilde prefix (~) indicates that the tilde symbol will match the most recent patch version or the most recent minor version, i.e., the middle number. For example, ~1.2.3 will match all 1.2.x but not 1.3.x versions.
+
+The caret prefix (^) indicates the first number, i.e., the most recent major version. It will update you on all future minor/patch versions without incrementing the major version. For example ^1.2.3, will use releases from 1.2.3 to <2.0.0
+
+It is important to note that both ~ and ^ assume that you can trust minor and patch releases from your dependencies.
+
+
+
+pack.json
+Its a configuration for npm . It keeps track of what version of packages is installed into our systems.So it should be in production.
+
+what is package-lock.json?
+The "package-lock.json" file in npm simply serves as a lockfile that captures the exact versions of packages
+ and their dependencies. It ensures that the same versions of packages are used across different installations
+  or environments
+  It should be in production to get exact version.
+
+
+  Transative dependencies:
+  Dependencies depended on other dependencies
+
+
+
+.gitignore{
+  helps us to ignore unwanted files to upload in git hub
+}
+
+
+
+npx pracel index.html to ignite app
+
+NPM is a package manager used to install, delete, and update Javascript packages on your machine.
+NPX is a package executer, and it is used to execute javascript packages directly or indirectly without installing them.
+
+
+Till now we used cdn links to get react. From now we can use npm to install react packages directly withou cdn links.
+But why?
+With cdn links it will make call to server which is time consuming insted we can install with npm in our packages.
+you don't need an internet connection to run a React app in localhost if you already have the React package installed in your modules.
+If we install react package no internet is required.
+
+
+Browser scripts cannot have imports or exports.
+normal javascript dont understamd import and export so we need to type module.
+
+
+1 First we need to install parcel
+2  npx parcel index.html to start server
+3 npm install react 
+4 npm i react-dom
+
