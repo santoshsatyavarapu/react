@@ -2,7 +2,7 @@ import { CDN_URL } from "../utls/constants";
 
 const ResturantCard = (props) => {
   const { resObj } = props;
-  const { cuisines, cloudinaryImageId, name, avgRating, costForTwo, sla } =
+  const { cuisines, cloudinaryImageId, name, avgRating, costForTwo, sla, id } =
     resObj?.info;
   const { deliveryTime } = sla;
 

@@ -21,3 +21,7 @@ Namaste React 🚀
 - HTTPs
 - Tree Shaking - remove unused code
 - Different dev and prod bundles
+
+Typing of routing:
+-Server side routing
+-Client side routing
