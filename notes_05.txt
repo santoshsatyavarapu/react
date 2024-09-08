@@ -1,0 +1,38 @@
+React Hooks:
+
+React hook is a normal JS function given by React.
+This are  utility function.
+- useState()  -to generate State Variables in React
+- useEffect()
+
+
+let arrayName is normal varialble 
+
+const [arrayName] = useState() is a state variable.
+
+The array takes list of state variables. useState() takes the actual data.
+
+
+WhenEver statevariable updates. react rerender the component.
+
+
+useEffect
+If no dependency array use effect will be called on every render.
+If dependency array is empty. useEffect will be called on initial render(just once).
+If we kept something as dependency it will be called every time dependency changed.
+
+Never use useEffect in a condition.
+
+
+useRouteError- Tells us what is the error.
+createBrowserRouter to create array of routes
+ RouterProvider- Component which takes routes
+
+
+
+Graph ql know about it
+LINK IS replaced by anchor tag in html
+
+
+1 13 19
+

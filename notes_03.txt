@@ -1,0 +1,34 @@
+Lets create script to run server in package.json.
+In scripsts we can write whatevere we need to do at starting.
+"start":"parcel index.html","build":parcel build index.html"   start and build can be any key names.
+
+Now to start any script we can write npm run scriptName like  npm run start
+
+React element is not a html element it is a object.
+
+reactDom element converts react element to html when we do render
+
+
+className not class in jsx.
+JSX is just syntax,and babel converts jsx syntex to react element.
+
+To write in multiple lines jsx need to be placed in brackets.
+
+
+React component:Everything is a component in react
+Two types:
+class based components//old way
+functional components//New way 
+
+Functional component:
+Can be triggered by <ComponentName />  or ComponentName() or <ComponentName> </ComponentName> all  are same
+
+Component composition means combining tow components.
+
+
+You can write javascript in jsx by adding {}. 
+
+So if {} in this we used an api and if it is attacked jsx will escape. The attack is know as cross side scripting
+
+
+

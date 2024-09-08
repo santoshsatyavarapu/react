@@ -1,0 +1,60 @@
+// never state variables directly why?
+
+
+
+
+Clss based Component.
+Life cycle methods
+
+mounting or loading is same.
+
+for a class when called instance of class is created.
+
+Then the constructor is called.
+
+Then render is called.
+
+ component did mount is called after constructor and render.
+
+
+Parent constructor-parent render-child constructor-child render-child component did mount -parent complonent did mount.
+
+
+Componentdidmount-for making api calls but why?
+
+
+
+first constructor is loades then render childern constructors  childern rendert the all component did mount.
+
+React preloads written code then calls api call at last in component did mount.
+
+first constructor, render the all childer constructor and render and then first childern component did mount and then continuoes.
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+Componentdidmount is not equivalent to useeffect hook because if we want to call api after every render in classComponent we need to use componentdidmounted insted
+
+in useeffect we can use dependency array.
+
+
+Why we need componentUnmount
+
+If we write set interval in component did mount or useeffect  since its a SPA the interval continuoes even when we go to another component so we need to stop by updating the settime out in componendid unmount or for useeffect we need to do
+
+
+return in use effect is called when component is unmounting so we can stop it in return in use effect.
+
+
+
+component­Did­Mount
+
+component­Did­Update
+
+component­Will­Unmount
+
+
+is  equivalent to useffect with return not same.
+
+
+
+
+

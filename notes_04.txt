@@ -1,0 +1,9 @@
+Planning.
+Props means properties. Are just normal aurgments to a function.
+Destructuring in the fly.
+
+
+
+config driven ui-our websites are driven by data. example which city you are in.
+
+
