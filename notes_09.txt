@@ -1,0 +1,26 @@
+Single responsiblity function
+
+Modularity means breaking downs the code to small modules.
+
+Code becomes reusable, maintainable and testabale
+
+ Linter
+
+
+ chunking
+ or 
+ codesplitting
+ or 
+ Dynaminc bundling
+ or
+ lazy loading
+ or
+  splitting the large application for optimizition
+ In Lazy loading we call only certain component and  loaded rest only when the other component are required by lazy loading 
+ or OnDemand Loading
+
+ lazy from react package
+
+ Once lazy was applied the lazy components are not loaded and react throws a error because to load component it  requires time since react is super fact insted of rendering it it renders error.
+ How to handle it by using suspense which was given by react 
+ Suspense = Lets you display a fallback until its children have finished loading.

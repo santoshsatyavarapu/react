@@ -23,8 +23,6 @@ class UserClass extends React.Component {
         avatar_url: json.avatar_url,
       },
     });
-
-    console.log(json);
   }
 
   render() {
