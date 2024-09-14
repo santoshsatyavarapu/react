@@ -31,18 +31,19 @@ const Body = () => {
   return listOfResturant.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body">
-      <div className="filter">
-        <div className="search">
+    <div className="flex flex-col items-center">
+      <div className="flex items-center">
+        <div className=" flex items-center m-4 p-4 ">
           <input
             type="text"
-            className="search-box"
+            className="border border-solid border-gray-500 rounded-sm py-1 h-8"
             value={searchText}
             onChange={(event) => {
               setSearchText(event.target.value);
             }}
           />
           <button
+            className="px-4 py-1 bg-orange-400 mx-4 rounded-sm  text-center text-white"
             onClick={() => {
               const searchFilteredList = listOfResturant.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -54,7 +55,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="px-4 py-1 bg-orange-400 mx-4 rounded-sm  text-center text-white"
           onClick={() => {
             const filteredList = listOfResturant.filter(
               (res) => res.info.avgRating > 4.5
@@ -63,11 +64,11 @@ const Body = () => {
             setFilteredResturant(filteredList);
           }}
         >
-          Top Rated Resturant
+          Top Rated
         </button>
 
         <button
-          className="filter-btn"
+          className="px-4 py-1 bg-orange-400 mx-4 rounded-sm  text-center text-white"
           onClick={() => {
             setFilteredResturant(listOfResturant);
           }}
@@ -75,7 +76,7 @@ const Body = () => {
           Clear Filter
         </button>
       </div>
-      <div className="res-container">
+      <div className=" flex items-center flex-wrap justify-center">
         {filteredResturant.map((resturant) => (
           <Link to={"restaurants/" + resturant.info.id} key={resturant.info.id}>
             <ResturantCard resObj={resturant} />
